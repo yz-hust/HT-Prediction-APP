@@ -22,6 +22,10 @@ This app predicts the **Adverse Events** of heart transplant recipients!
 
 st.sidebar.header('User Input Features')
 
+st.sidebar.markdown("""
+[Example XLSX input file](https://github.com/yz-hust/HT-Prediction-APP/blob/main/HT_Titles_Example.xlsx)
+""")
+
 
 # Collects user input features into dataframe
 uploaded_file = st.sidebar.file_uploader("Upload your input xlsx file", type=["xlsx"])  # 上传文件控件
