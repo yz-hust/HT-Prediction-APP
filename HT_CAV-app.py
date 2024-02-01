@@ -38,28 +38,28 @@ else:
 
         # 超声指标
         lvgls = st.sidebar.slider('LVGLS (%)', -30.0, 0.0, -15.6)  # 数字滑块控件
-        rvfac = st.sidebar.slider('RVFAC (%)', 20.0, 50.0, 35.0)
-        tapse = st.sidebar.slider('TAPSE (mm)', 0.0, 10.0, 2.8)
-        lvef = st.sidebar.slider('LVEF (%)', 0.0, 100.0, 65.0)
+        rvfac = st.sidebar.slider('RVFAC (%)', 0.0, 70.0, 35.0)
+        tapse = st.sidebar.slider('TAPSE (mm)', 0.0, 30.0, 2.8)
+        lvef = st.sidebar.slider('LVEF (%)', 0.0, 80.0, 65.0)
 
         # 心肌酶
-        bnp = st.sidebar.slider('BNP (pg/mL)', 0.0, 50.0, 15.0)
-        ctni = st.sidebar.slider('cTnI (ug/L)', 0.0, 50.0, 15.0)
+        bnp = st.sidebar.slider('BNP (pg/mL)', 0.0, 30000.0, 1000.0)
+        ctni = st.sidebar.slider('cTnI (ug/L)', 0.0, 10000.0, 1500.0)
 
         # 血常规
-        hemo = st.sidebar.slider('Hemoglobin (g/L)', 0.0, 50.0, 15.0)
-        eryth = st.sidebar.slider('Erythrocyte counts (10*12/L)', 0.0, 50.0, 15.0)
+        hemo = st.sidebar.slider('Hemoglobin (g/L)', 40.0, 200.0, 55.0)
+        eryth = st.sidebar.slider('Erythrocyte counts (10*12/L)', 1, 7, 2)
 
         # 心肌酶
-        bun = st.sidebar.slider('BUN (mmol/L)', 0.0, 50.0, 15.0)
-        albumin = st.sidebar.slider('Albumin (g/L)', 0.0, 50.0, 15.0)
-        creatinine = st.sidebar.slider('Creatinine (umol/L)', 0.0, 50.0, 15.0)
+        bun = st.sidebar.slider('BUN (mmol/L)', 0.0, 100.0, 25.0)
+        albumin = st.sidebar.slider('Albumin (g/L)', 25.0, 70.0, 30.0)
+        creatinine = st.sidebar.slider('Creatinine (umol/L)', 0.0, 1000.0, 150.0)
 
         # 其他
-        heart_rate = st.sidebar.slider('Heart rate (bpm)', 0.0, 50.0, 15.0)
+        heart_rate = st.sidebar.slider('Heart rate (bpm)', 0.0, 150.0, 100.0)
 
-        donor_age = st.sidebar.slider('Donor age (years)', 0.0, 50.0, 15.0)
-        cold_time = st.sidebar.slider('Cold ischemic time (hours)', 0.0, 50.0, 15.0)
+        donor_age = st.sidebar.slider('Donor age (years)', 10, 65, 50)
+        cold_time = st.sidebar.slider('Cold ischemic time (hours)', 0.0, 660.0, 300.0)
 
         data = {'LVGLS': lvgls,
                 'RVFAC': rvfac,
